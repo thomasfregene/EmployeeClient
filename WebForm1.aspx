@@ -41,6 +41,42 @@
                     <asp:TextBox ID="txtDateOfBirth" runat="server"></asp:TextBox>
                 </td>
             </tr>
+             <tr>
+                <td>
+                    <b>Employee Type</b>
+                </td>
+                <td>
+                    <asp:DropDownList ID="dllEmployeeType" runat="server" AutoPostBack="True" OnSelectedIndexChanged="dllEmployeeType_SelectedIndexChanged">
+                        <asp:ListItem Text="Select Employee Type" Value="-1"></asp:ListItem>
+                        <asp:ListItem Text="Full Time Employee" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="Part Time Employee" Value="2"></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+             <tr id="trAnnualSalary" runat="server" visible="false">
+                <td>
+                    <b>Annual Salary</b>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtAnnualSalary" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+             <tr id="trHourlyRate" runat="server" visible="false">
+                <td>
+                    <b>Hourly Rate</b>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtHourlyRate" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+             <tr id="trHoursWorked" runat="server" visible="false">
+                <td>
+                    <b>Hours Worked</b>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtHoursWorked" runat="server"></asp:TextBox>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <asp:Button ID="btnGetEmployee" runat="server" Text="Get Employee" OnClick="btnGetEmployee_Click" />
